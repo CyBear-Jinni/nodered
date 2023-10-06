@@ -1,6 +1,7 @@
 import 'package:nodered/nodered.dart';
+import 'package:nodered/src/utils.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  NodeRedAPI nodeRed = NodeRedAPI();
+  logger.i('IP ${nodeRed.address} port ${nodeRed.port}');
 }
